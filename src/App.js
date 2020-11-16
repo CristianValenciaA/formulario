@@ -1,22 +1,30 @@
+  
 import logo from './logo.svg';
 import './App.css';
+import {OtroComponente, OtroComponenteMas, ComponentePrueba} from './OtroComponente';
 
 function App() {
   return (
+    
     <div className="App">
+      {/* Esto es JSX */}    
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          React.
         </a>
+        <img src={logo} className="App-logo" alt="logo" />
+
+        <OtroComponente />
+        <h3> Probando componente numero 2       
+          < ComponentePrueba />
+        </h3> 
+        <OtroComponenteMas />
       </header>
     </div>
   );
